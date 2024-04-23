@@ -16,10 +16,15 @@ int main(){
 
     cout << "Carta do topo" << cartas.top() << "\n";
 
+    while(!cartas.empty()){
+        cout << "Carta do topo: " << cartas.top() << "\n";
+        cartas.pop();
+    }
+
     cartas.pop();
     cartas.pop();
 
-    cout << "Carta do topo" << cartas.top() << "\n";
+    cout << "Carta do topos" << cartas.top() << "\n";
 
 	return 0;
 
